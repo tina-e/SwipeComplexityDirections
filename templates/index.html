@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Logger</title>
+</head>
+<body>
+
+<h2>Log Data</h2>
+
+<input id="name" placeholder="name">
+<input id="value" placeholder="value">
+<button onclick="send()">Submit</button>
+
+<p id="status"></p>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
