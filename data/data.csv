@@ -1,0 +1,1 @@
+pid,condition,block,trial,targetGesture,detectedGesture,minTargetLength,detectedLength,error,trialStart,touchStart,touchEnd,animationStart,animationEnd,touchPath

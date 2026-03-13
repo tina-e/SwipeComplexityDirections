@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    height: 100svh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #111;
+    font-family: sans-serif;
+    overflow: hidden;
+    flex-direction: column;
+    touch-action: none;
+}
+
+.cover {
+    background-color: #111;
+    height: inherit;
+    width: 100%;
+    z-index: 10;
+}
+
+#area {
+    width: 100svw;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    background: gray;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#card {
+    width: 50svw;
+    aspect-ratio: 1 / 1;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: bold;
+    user-select: none;
+    touch-action: none;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+      

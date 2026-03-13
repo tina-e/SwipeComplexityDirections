@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>CSV Logger</title>
-</head>
-<body>
-
-<h2>Log Data</h2>
-
-<input id="name" placeholder="name">
-<input id="value" placeholder="value">
-<button onclick="send()">Submit</button>
-
-<p id="status"></p>
-
-<script src="{{ url_for('static', filename='js/script.js') }}"></script>
-
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <title>Gesture Complexity Prototype</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body id="app">
+        <div class="cover"></div>
+        <div id="area">
+            <span id="status-hint" style="color: white;"></span>
+            <div id="card">
+                <img id="arrow" width="75%"
+                    src="{{ url_for('static', filename='img/arrow.png') }}"
+                    data-long="{{ url_for('static', filename='img/arrow.png') }}"
+                    data-short="{{ url_for('static', filename='img/arrow-short.png') }}">
+                <!-- <img id="arrow-short" src="{{ url_for('static', filename='img/arrow-short.png') }}" width="75%" hidden> -->
+            </div>
+            <span id="instruction" style="color: white;"></span>
+        </div>
+        <div class="cover"></div>
+        <script type="module" src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
 </html>
